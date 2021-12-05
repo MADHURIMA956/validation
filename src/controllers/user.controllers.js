@@ -41,7 +41,7 @@ router.post(
   //   return true
   // })
   // .withMessage('Gender must be Male , Female or Others'),
-  .withMessage("gender is required  ").isIn(["Male", "Female","Others"]).withMessage("write proper gender"),
+  .withMessage("gender is required").isIn(["Male", "Female","Others"]).withMessage("Gender must be Male , Female or Others"),
 
   body('age')
   .custom(value => {
